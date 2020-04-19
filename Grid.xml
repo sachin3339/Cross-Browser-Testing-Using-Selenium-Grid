@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+  <suite thread-count="3" name="Suite" parallel="tests">
+ 	 
+ 	  <test name="Firefox Test">
+		<parameter name="Port" value="4545" />
+		<classes>
+			<class name="com.selenium.handling.Selenium_Grid_parallel" />
+
+		</classes>
+	</test>
+	
+	
+
+	<test name="Chrome Test">
+		<parameter name="Port" value="4546" />
+		<classes>
+			<class name="com.selenium.handling.Selenium_Grid_parallel" />
+
+		</classes>
+	</test>
+
+
+	<test name="InternetExplorerTest">
+		<parameter name="Port" value="4547" />		
+		<classes>
+			<class name="com.selenium.handling.Selenium_Grid_parallel" />
+		</classes>
+	</test>
+
+
+
+	
+</suite>
